@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel = "stylesheet" href = "pizzastyle.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+<title>Pizza Delight</title>
+</head>
+<body>
+
+<header class = "firstbox">
+<div class = "name">
+<h1>Pizza Delight</h1>
+</div>
+<div class = "fire">
+<div class = "fireflame">
+  <div class = " flame red">
+  </div>
+  <div class = " flame orange">
+  </div>
+  <div class = " flame gold">
+  </div>
+  <div class = "flame white">
+  </div>
+  <div class = "flame blue">
+  </div>
+ 
+  </div>
+</div>
+
+<div class =  "menu1">
+<a href = "yourlink.com" class = "m1">Menu</a>
+<a href = "yourlink.com" class = "m1"> Specials</a>
+<a href = "yourlink.com"  class = "m1">Order Online</a>
+<a href = "yourlink.com" class = "m1">Contact Us</a>
+</div>
+<a href = "yourlink.html" class = "icon"><i class = "fa fa-shopping-cart"></i></a>
+</header>
+
+<section class="slider">
+<div class = "myslider">
+<img src = "p1.jpg">
+</div>
+<div class = "myslider">
+<img src = "p2.jpg">
+</div>
+<div class = "myslider">
+<img src = "p3.jpg">
+</div>
+
+</section>
+
+<section class="pizza-specials">
+<div class = " todaysspecial">
+<h2>Today's Special</h2>
+</div>
+<div class = " options">
+<div class = "option1">
+<img src = "p4.jpg" class = "i">
+<p>Supreme Pizza</p>
+</div>
+<div class = "option2">
+<img src = "p5.jpg" class = "i">
+<p>Peri Peri Pizza</p>
+</div>
+<div class = "option3">
+<img src = "p6.jpg" class = "i">
+<p>Margerita Pizza</p>
+</div>
+</div>
+</section>
+
+<section class="testimonials">
+<div class = "customers">
+<h2>What Our Customers  Say</h2>
+</div>
+<div >
+<p><i>The best pizza in town.I can't get enough of their delicious crust and fresh toppings.</i></p>
+<p><i>-John Lee</i></p>
+<p><i>Pizza Delight never disappoints.Quick delivery and mouth watering flavours.Highly recommended.</i></p>
+<p><i>-Sarah M</i></p>
+<div>
+
+</div class = "order">
+<div class = "order1">
+<h2>Ready to Order?</h2>
+</div>
+<p>Experience the taste of perfection.Order now and enjoy a delightful pizza expreince</p>
+</div> 
+<div class = "button">
+<a href = "yourlink.html">Order Now</a>
+</div>
+</section>
+
+<section class="cta">
+
+</section>
+
+<section class="three-rows">
+<div class = "r1">
+<h3>Quality Ingredients</h3>
+<p class = "para">We use fine and fresh ingredients to prepare our pizzas</p>
+</div>
+<div class = "r2">
+<h3>Customization Option</h3>
+<p class = "para">Customize your pizza with varitety of toppings, sauces and crust option to suit your taste</p>
+</div>
+<div class = "r3">
+<h3>Fast Delivery</h3>
+<p class = "para">Enjoy Quick and fast delivery to serve you pizza at its best</p>
+</div>
+</section>
+
+<section class="contact-form">
+<div class = "contact-heading">
+<h2>Contact Form</h2>
+</div>
+<div class = "inputs">
+<label for = "name ">Your Name:</label>
+<input type = "text" id = "name" name = "name">
+<label for = "email">Your Email:</label>
+<input for = "email" id = "email">
+<label for = "tell">Your Phonenumber:</label>
+<input for = "tell" id = "tell">
+<label for = "message">Your Message:</label>
+<textarea id = "message"rows = "5" ></textarea>
+</div>
+<div class = "buttons">
+
+<div class = "button1">
+<a href = "yourlink.html">Submit</a>
+
+</div>
+
+<div class = "button1">
+<a href = "yourlink.html">Reset</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+<footer>
+
+</footer>
+
+<script>
+let slideIndex = 0;
+showSlides();
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("myslider");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  slides[slideIndex-1].style.display = "block";  
+  setTimeout(showSlides, 2000); 
+}
+</script>
+
+
+</body>
+</html>
